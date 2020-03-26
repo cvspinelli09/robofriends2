@@ -12,10 +12,16 @@ class Clock extends React.Component {
 
     render() {
         return (
-            <div>
-                <h3>  {this.state.date.toLocaleTimeString()} </h3>
-            </div>
-        )
+          <div>
+            <h3>
+              {" "}
+              {this.state.date.toLocaleTimeString(navigator.language, {
+                hour: "2-digit",
+                minute: "2-digit"
+              })}{" "}
+            </h3>
+          </div>
+        );
     }
 }
 

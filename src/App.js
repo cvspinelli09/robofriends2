@@ -3,6 +3,7 @@ import CardList from "./CardList";
 import SearchBox from './SearchBox';
 import Scroll from './Scroll';
 import ErrorBoundry from './ErrorBoundry';
+import Clock from './Clock';
 // import { robots } from './robots';
 
 
@@ -34,6 +35,7 @@ class App extends React.Component {
         return (
           <div className="tc">
             <h1>RobotFriends</h1>
+            <Clock />
             <SearchBox searchChange={this.onSearchChange} />
             <Scroll>
               <ErrorBoundry>

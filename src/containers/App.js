@@ -1,9 +1,9 @@
 import React from 'react';
-import CardList from "./CardList";
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
-import ErrorBoundry from './ErrorBoundry';
-import Clock from './Clock';
+import CardList from "../components/CardList";
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
+import Clock from '../components/Clock';
 // import { robots } from './robots';
 
 

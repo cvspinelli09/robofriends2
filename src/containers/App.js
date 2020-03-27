@@ -5,8 +5,14 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
 import Clock from '../components/Clock';
+import Header from '../components/Header';
 
 import { setSearchField, requestRobots } from '../actions'; 
+
+if (process.env.NODE_ENV !== 'production') {
+  const { whyDidYouUpdate } = require('why-did-you-update');
+  whyDidYouUpdate(React);
+}
 
 
 class App extends React.Component {
@@ -25,7 +31,7 @@ class App extends React.Component {
         <h1>Loading</h1> :
         (
           <div className="tc">
-            <h1>RobotFriends</h1>
+            <Header />
             <Clock />
             <SearchBox searchChange={onSearchChange} />
             <Scroll>
